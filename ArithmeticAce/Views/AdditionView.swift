@@ -117,6 +117,18 @@ struct AdditionView: View {
                     .opacity(answerChecked == true ? 1.0 : 0.0)
                 
             }
+         
+            // Reaction animation
+            ZStack {
+                LottieView(animationNamed: "51926-happy")
+                    .opacity(answerCorrect == true ? 1.0 : 0.0)
+                    .padding()
+
+                LottieView(animationNamed: "91726-sad-guy-is-walking")
+                    .opacity(answerChecked == true && answerCorrect == false ? 1.0 : 0.0)
+                    .padding()
+            }
+
             
             Spacer()
         }
