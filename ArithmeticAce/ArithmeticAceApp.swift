@@ -36,8 +36,6 @@ struct ArithmeticAceApp: App {
                         Image(systemName: "divide.circle")
                         Text("Divide")
                     }
-
-                
             }
         }
     }
