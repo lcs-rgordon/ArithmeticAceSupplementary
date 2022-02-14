@@ -128,13 +128,11 @@ struct AdditionView: View {
                     .opacity(answerChecked == true && answerCorrect == false ? 1.0 : 0.0)
                     .padding()
             }
-
             
             Spacer()
         }
         .padding(.horizontal)
         .font(.system(size: 72))
-        
         
     }
 }
